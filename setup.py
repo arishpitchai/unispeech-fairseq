@@ -40,8 +40,8 @@ def write_version_py():
 version = write_version_py()
 
 
-with open("../README.md") as f:
-    readme = f.read()
+# with open("../README.md") as f:
+#    readme = f.read()
 
 
 if sys.platform == "darwin":
@@ -189,8 +189,8 @@ def do_setup(package_data):
             "Programming Language :: Python :: 3.8",
             "Topic :: Scientific/Engineering :: Artificial Intelligence",
         ],
-        long_description=readme,
-        long_description_content_type="text/markdown",
+        long_description="Facebook AI Research Sequence-to-Sequence Toolkit",
+        # long_description_content_type="text/markdown",
         setup_requires=[
             "cython",
             'numpy<1.20.0; python_version<"3.7"',
